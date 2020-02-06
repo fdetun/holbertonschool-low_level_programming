@@ -1,29 +1,20 @@
 #include <stdio.h>
 /**
- * main-  main block
- * Return: 0
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-int f = 48;
-int b = 47;
-int l = 44;
-int e = 32;
-while (f < 58 && b < 58)
+int c;
+for (c = 0; c <= 99; ++c)
 {
-b++;
-putchar(f);
-putchar(b);
+putchar (c / 10 + '0');
+putchar(c % 10 + '0');
+if (c != 99)
 {
-if (f == 57 && b == 57)
-break;
-putchar(l);
-putchar(e);
-}
-if (b == 57)
-{
-f++;
-b = 48;
+putchar(44);
+putchar(32);
 }
 }
 putchar('\n');
