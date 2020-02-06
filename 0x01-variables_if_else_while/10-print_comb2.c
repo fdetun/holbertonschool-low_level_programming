@@ -14,9 +14,9 @@ while (f < 58 && b < 58)
 b++;
 putchar(f);
 putchar(b);
+{
 if (f == 57 && b == 57)
 break;
-{
 putchar(l);
 putchar(e);
 }
