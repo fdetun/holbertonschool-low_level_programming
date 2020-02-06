@@ -23,11 +23,9 @@ putchar(e);
 if (b == 57)
 {
 f++;
-b = 48 ;
+b = 48;
 }
 }
 putchar('\n');
 return (0);
 }
-
-
