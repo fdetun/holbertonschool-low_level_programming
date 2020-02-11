@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- *times_table - prints the_times_table
+ *print_times_table - prints print_times_table
  *
  *@n: int type number
  *
