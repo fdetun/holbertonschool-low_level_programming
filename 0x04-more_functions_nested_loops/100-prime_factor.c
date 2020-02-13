@@ -1,14 +1,14 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
-* main - 100 prime factor
+* main - prints the largest prime factor of 612852475143
 * Return: 0
 */
 int main(void)
 {
-long long int n;
+unsigned long int n;
 n = 612852475143;
-long long int a = 2, f;
+unsigned long int a = 2, f;
 
 while (n != 0)
 {
@@ -20,7 +20,7 @@ f = n;
 n = n / a;
 if (n == 1)
 {
-printf("%lli\n", f);
+printf("%lu\n", f);
 break;
 }
 }
