@@ -20,7 +20,7 @@ f = n;
 n = n / a;
 if (n == 1)
 {
-printf("%lli is the largest prime factor of 612852475143\n", f);
+printf("%lli\n", f);
 break;
 }
 }
