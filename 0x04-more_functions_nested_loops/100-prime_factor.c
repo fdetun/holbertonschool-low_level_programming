@@ -6,24 +6,13 @@
 */
 int main(void)
 {
-unsigned long int n;
-n = 612852475143;
-unsigned long int a = 2, f;
+long long int i, n = 612852475143;
 
-while (n != 0)
+for (i = 3; i < 782849; i = i + 2)
 {
-if (n % a != 0)
-a = a + 1;
-else
-{
-f = n;
-n = n / a;
-if (n == 1)
-{
-printf("%lu\n", f);
-break;
+while ((n % i == 0) && (n != i))
+n = n / i;
 }
-}
-}
+printf("%llu\n", n);
 return (0);
 }
