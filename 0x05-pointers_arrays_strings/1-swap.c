@@ -3,8 +3,8 @@
 
 /**
  * swap_int - swap_int code.
- *
- * Return: Always 0.
+ *@a: integer to check.
+ *@b: integer to check.
  */
 void swap_int(int *a, int *b)
 {

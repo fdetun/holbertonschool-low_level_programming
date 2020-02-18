@@ -2,17 +2,16 @@
 #include <stdio.h>
 
 /**
- * _strlen - returns the length of a string.
- * @s: char to define the string 
- * Return: the lenth 
+ * print_rev - print_rev of a string.
+ * @s: char to define the string
 */
 
 void print_rev(char *s)
 {
-int i=0;
+int i = 0;
 while (s[i] != '\0')
 i++;
-i = i - 1 ;
+i = i - 1;
 while (s[i] > 0)
 {
 _putchar (s[i]);

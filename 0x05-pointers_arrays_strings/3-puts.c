@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * _strlen - returns the length of a string.
- * @s: char to define the string 
- * Return: the lenth 
+ * _puts - _puts a string.
+ * @str: char to define the string
+ * Return: the lenth
 */
 
 void _puts(char *str)
