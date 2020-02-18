@@ -4,9 +4,11 @@
 /**
  * puts2 - puts2  a string.
  * @str: char to define the string 
-*/
-void int main(int argc, char const *argv[])
+*/int main(int argc, char const *argv[])
 {
-	putchar (48);
+	for (int i = 0; i < count; ++i)
+	{
+		/* code */
+	}
 	return 0;
 }
