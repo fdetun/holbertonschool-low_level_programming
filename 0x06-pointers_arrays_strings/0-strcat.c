@@ -5,6 +5,7 @@
  * *_strcat - _strcat  a string.
  * @dest: char to define the string
  * @src: char to define the string
+ * Return: dest.
 */
 
 char *_strcat(char *dest, char *src)
@@ -15,7 +16,7 @@ while (dest[j] != '\0')
 j++;
 while (src[i] != '\0')
 {
-dest[i + j] = src[i];
+dest[j + i] = src[i];
 i++;
 }
 return (dest);
