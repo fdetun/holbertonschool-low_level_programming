@@ -2,9 +2,8 @@
 #include <stdio.h>
 
 /**
- * *_strcmp - _strcmp  a string.
- * @s1: char to define the string
- * @s2: char to define the string
+ * *string_toupper - string_toupper  a string.
+ * @f: char to define the string
  * Return: f.
 */
 
@@ -16,7 +15,7 @@ while  (f[i] != '\0')
 {
 i++;
 if (f[i] >= 97 && f[i] <= 122)
-	f[i] = f[i] - 32;
+f[i] = f[i] - 32;
 }
 return (f);
 }
