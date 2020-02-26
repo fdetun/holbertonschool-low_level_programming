@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * _puts_recursion - check the code for Holberton School students.
+ * _print_rev_recursion - check the code for Holberton School students.
  * @s: The character to print
  * Return: void.
  */
