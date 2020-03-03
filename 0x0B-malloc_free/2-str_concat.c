@@ -23,7 +23,10 @@ s2 = "";
 while (s1[j] != '\0')
 j++;
 for (i = 0; s2[i] != '\0'; i++)
+{
 b = i + j;
+}
+b = b + 1;
 a = malloc(b *sizeof(char));
 if (a == NULL)
 return (NULL);
