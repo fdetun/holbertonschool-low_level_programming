@@ -22,7 +22,6 @@ if (s2 == NULL)
 s2 = "";
 while (s1[j] != '\0')
 j++;
-j = j + 1;
 for (i = 0; s2[i] != '\0'; i++)
 b = i + j;
 a = malloc(b *sizeof(char));
@@ -30,7 +29,7 @@ if (a == NULL)
 return (NULL);
 for (i = 0; s1[i] != '\0'; i++)
 a [i] = s1 [i];
-for (j = 0; j <= b; j++)
+for (j = 0; s2[j] != '\0'; j++)
 a [i + j] = s2 [j];
 return (a);
 }
