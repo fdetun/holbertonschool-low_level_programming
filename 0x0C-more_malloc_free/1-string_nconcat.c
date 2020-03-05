@@ -40,5 +40,6 @@ while (h < j)
 a[l + h] = s2[h];
 h++;
 }
+a[l + j] = '\0';
 return (a);
 }
