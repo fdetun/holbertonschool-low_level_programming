@@ -35,7 +35,7 @@ while (s1[l] != '\0')
 a[l] = s1[l];
 l++;
 }
-while (h <= j)
+while (h < j)
 {
 a[l + h] = s2[h];
 h++;
