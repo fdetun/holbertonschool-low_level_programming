@@ -10,19 +10,21 @@
 
 int *array_range(int min, int max)
 {
-int *a;
-int i = 0;
+int *f;
 int b = 0;
+int i = 0;
+
 b = max - min + 1;
 if (min > max)
 return (NULL);
-a = malloc(b *sizeof(int));
-if (!a)
+f = malloc(b *sizeof(int));
+if (!f)
 return (NULL);
-while (i <= max)
+while (min <= max && i < b)
 {
-a[i] = i;
+f[i] = min;
+min++;
 i++;
 }
-return (a);
+return (f);
 }
