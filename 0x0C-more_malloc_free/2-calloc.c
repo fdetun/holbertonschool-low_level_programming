@@ -16,7 +16,7 @@ if (nmemb == 0)
 return (NULL);
 if (size == 0)
 return (NULL);
-a = malloc(sizeof(unsigned int) * j);
+a = malloc(j);
 if (!a)
 return (NULL);
 while (i < j)
