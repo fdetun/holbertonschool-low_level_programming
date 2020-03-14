@@ -16,9 +16,10 @@ va_list f1;
 va_start(f1, n);
 for (i = 0; i < n; i++)
 {
-c = va_arg(f1, char*);
+c = va_arg(f1, char *);
+if (c != NULL)
 printf("%s", c);
-if (c == NULL)
+else
 printf("(nil)");
 if (i != (n - 1) && separator != NULL)
 printf("%s", separator);
