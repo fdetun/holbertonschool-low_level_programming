@@ -1,5 +1,5 @@
 section .data
-    msg db 'Hello Holberton', 0ah
+    msg db 'Hello, Holberton', 0ah
 
 section .text
     global _start
