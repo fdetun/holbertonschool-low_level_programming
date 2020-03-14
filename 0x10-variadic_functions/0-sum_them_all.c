@@ -1,5 +1,4 @@
 #include "variadic_functions.h"
-#include <stdio.h>
 #include <stdarg.h>
 
 /**
@@ -9,7 +8,7 @@
  */
 int sum_them_all(const unsigned int n, ...)
 {
-unsigned int total = 0;
+int total = 0;
 unsigned int i;
 if (n == 0)
 {
