@@ -20,7 +20,7 @@ c = va_arg(f1, char*);
 printf("%s", c);
 if (c == NULL)
 printf("(nil)");
-if (i < (n - 1) && separator != NULL)
+if (i != (n - 1) && separator != NULL)
 printf("%s", separator);
 }
 printf("\n");
