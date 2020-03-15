@@ -8,11 +8,12 @@
  */
 void print_all(const char * const format, ...)
 {
+va_list f1;
 int i = 0;
 int ii, b;
-va_list f1;
-va_start(f1, format);
 char *s;
+
+va_start(f1, format);
 while (format[i] != '\0' && format != NULL)
 {
 b = 0;
