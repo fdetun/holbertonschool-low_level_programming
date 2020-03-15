@@ -14,8 +14,14 @@ int b;
 char *s;
 
 va_start(f1, format);
+while (format == NULL)
+{
+printf("\n");
+return;
+}
 while (format[i] != '\0' && format != NULL)
 {
+b = 0;
 switch (format[i])
 {
 case 99:
@@ -39,9 +45,6 @@ break;
 case 102:
 printf("%f", va_arg(f1, double));
 b = 1;
-break;
-default:
-b = 0;
 break;
 }
 if (b == 1 && format[i + 1])
