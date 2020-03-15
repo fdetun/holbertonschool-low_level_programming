@@ -2,6 +2,19 @@
 #include <stdio.h>
 #include <stdarg.h>
 /**
+ * fde - fde
+ * @f1: f1
+ */
+void fde(va_list f1)
+{
+	char *s;
+
+	s = va_arg(f1, char *);
+	if (s == NULL)
+		printf("(nil)");
+	printf("%s", s);
+}
+/**
  * print_all - print_all
  * @format: format
  * return: void
@@ -11,7 +24,6 @@ void print_all(const char * const format, ...)
 va_list f1;
 int i = 0;
 int b;
-char *s;
 
 va_start(f1, format);
 while (format == NULL)
@@ -34,13 +46,7 @@ b = 1;
 break;
 case 115:
 b = 1;
-s = va_arg(f1, char*);
-if (s == NULL)
-{
-printf("(nil)");
-break;
-}
-printf("%s", s);
+fde(f1);
 break;
 case 102:
 printf("%f", va_arg(f1, double));
