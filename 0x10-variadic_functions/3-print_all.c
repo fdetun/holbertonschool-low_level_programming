@@ -16,7 +16,6 @@ char *s;
 va_start(f1, format);
 while (format[i] != '\0' && format != NULL)
 {
-b = 0;
 switch (format[i])
 {
 case 99:
@@ -41,11 +40,14 @@ case 102:
 printf("%f", va_arg(f1, double));
 b = 1;
 break;
+default:
+b = 0;
+break;
 }
 if (b == 1 && format[i + 1])
 printf(", ");
 i++;
-va_end(f1);
 }
+va_end(f1);
 printf("\n");
 }
