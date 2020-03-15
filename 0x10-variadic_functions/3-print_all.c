@@ -7,12 +7,15 @@
  */
 void fde(va_list f1)
 {
-	char *s;
+char *s;
 
-	s = va_arg(f1, char *);
-	if (s == NULL)
-		printf("(nil)");
-	printf("%s", s);
+s = va_arg(f1, char *);
+if (s == NULL)
+{
+printf("(nil)");
+return;
+}
+printf("%s", s);
 }
 /**
  * print_all - print_all
