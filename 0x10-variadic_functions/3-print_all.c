@@ -10,7 +10,7 @@ void print_all(const char * const format, ...)
 {
 va_list f1;
 int i = 0;
-int ii, b;
+int b;
 char *s;
 
 va_start(f1, format);
@@ -24,8 +24,7 @@ printf("%c", va_arg(f1, int));
 b = 1;
 break;
 case 105:
-ii = va_arg(f1, int);
-printf("%d", ii);
+printf("%d", va_arg(f1, int));
 b = 1;
 break;
 case 115:
@@ -46,7 +45,7 @@ break;
 if (b == 1 && format[i + 1])
 printf(", ");
 i++;
-}
 va_end(f1);
+}
 printf("\n");
 }
