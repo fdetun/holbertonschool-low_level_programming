@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "lists.h"
 /**
  * print_list - print_list
@@ -18,7 +17,7 @@ printf("[0] (nil)\n");
 }
 else
 {
-printf("[%d] %s\n", h->len, h->str);
+printf("[%u] %s\n", h->len, h->str);
 }
 h = h->next;
 n++;
