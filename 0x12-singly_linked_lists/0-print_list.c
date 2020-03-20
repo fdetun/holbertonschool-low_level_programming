@@ -13,7 +13,7 @@ while (h != NULL)
 {
 if (h->str != NULL)
 {
-printf("[%x] ", h->len);
+printf("[%d] ", h->len);
 printf("%s\n", h->str);
 }
 else
