@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * free_listint - free_list
+ * free_listint2 - free_listint2
  * @head: the memory of the new string
  * Return: void
  **/
@@ -11,7 +11,7 @@ void free_listint2(listint_t **head)
 listint_t *h;
 
 if (head == NULL)
-		return;
+return;
 while (*head != NULL)
 {
 h = *head;
