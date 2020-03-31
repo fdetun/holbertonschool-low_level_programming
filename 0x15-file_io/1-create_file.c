@@ -17,7 +17,8 @@ return (-1);
 f = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 if (f == -1)
 return (-1);
-if (text_content != NULL)
+if (text_content == NULL)
+return (1);
 a = write(f, text_content, lenght);
 if (a == -1)
 return (-1);
