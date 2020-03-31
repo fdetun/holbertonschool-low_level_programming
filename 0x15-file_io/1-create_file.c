@@ -23,5 +23,4 @@ a = write(f, text_content, lenght);
 if (a == -1)
 return (-1);
 close(f);
-return (1);
 }
