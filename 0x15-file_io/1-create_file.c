@@ -11,7 +11,7 @@ int create_file(const char *filename, char *text_content)
 {
 int f, lenght, a;
 
-lenght = strlen(text_content);
+
 if (filename == NULL)
 return (-1);
 f = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
@@ -19,8 +19,10 @@ if (f == -1)
 return (-1);
 if (text_content == NULL)
 return (1);
+lenght = strlen(text_content);
 a = write(f, text_content, lenght);
+close(f);
 if (a == -1)
 return (-1);
-close(f);
+return (1);
 }
