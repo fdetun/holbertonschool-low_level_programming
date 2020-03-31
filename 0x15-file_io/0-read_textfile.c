@@ -21,12 +21,12 @@ stringg = malloc(sizeof(letters));
 if (!stringg)
 return (0);
 n = read(a, stringg, letters);
-if (!n)
+if (n == -1)
 return (0);
 c = write(STDOUT_FILENO, stringg, n);
 close(a);
 free(stringg);
-if (!c)
+if (c == -1)
 return (0);
 return (n);
 }
