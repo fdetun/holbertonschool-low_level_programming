@@ -15,7 +15,7 @@ char *stringg;
 if (!filename)
 return (0);
 a = open(filename, O_RDONLY);
-if (!a)
+if (a == -1)
 return (0);
 stringg = malloc(sizeof(letters));
 if (!stringg)
@@ -24,9 +24,9 @@ n = read(a, stringg, letters);
 if (!n)
 return (0);
 c = write(STDOUT_FILENO, stringg, n);
-if (!c)
-return (0);
 close(a);
 free(stringg);
+if (!c)
+return (0);
 return (n);
 }
