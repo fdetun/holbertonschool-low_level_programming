@@ -17,7 +17,7 @@ return (0);
 a = open(filename, O_RDONLY);
 if (a == -1)
 return (0);
-stringg = malloc(sizeof(letters));
+stringg = malloc(sizeof(char) * (letters));
 if (!stringg)
 return (0);
 n = read(a, stringg, letters);
