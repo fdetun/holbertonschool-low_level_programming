@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * add_dnodeint - add_dnodeint
+ * add_dnodeint_end - add_dnodeint_end
  * @head: header
  * @n: int
  * Return: h
