@@ -26,6 +26,8 @@ def fdefunc(i, grid):
 def island_perimeter(grid):
     """ island_perimeter """
     global sm
+    if not grid:
+        return 0
     for incr in range(len(grid)):
         a = fdefunc(incr, grid)
         for j in range(len(grid[incr])):
