@@ -14,12 +14,10 @@ def fdefunc(i, grid):
     listindex = []
     for j in range(len(grid[i])):
         if grid[i][j] == 1:
-            sm = sm + 3
+            sm = sm + 4
             listindex.append(j)
-            if grid[i][j + 1] == 1 and grid[i][j - 1] == 1:
-                sm = sm - 1
-            elif grid[i][j + 1] == 0 and grid[i][j - 1] == 0:
-                sm = sm + 1
+            if grid[i][j - 1] == 1:
+                sm = sm - 2
     return listindex
 
 
