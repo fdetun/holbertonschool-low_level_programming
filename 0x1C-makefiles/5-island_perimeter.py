@@ -12,11 +12,12 @@ def fdefunc(i, grid):
 
     global sm
     listindex = []
-    for j in range(len(grid[i])):
+    j = 0
+    for j in range(0, len(grid[i])):
         if grid[i][j] == 1:
             sm = sm + 4
             listindex.append(j)
-            if grid[i][j - 1] == 1:
+            if j and grid[i][j - 1] == 1:
                 sm = sm - 2
     return listindex
 
@@ -30,5 +31,6 @@ def island_perimeter(grid):
         a = fdefunc(incr, grid)
         for j in range(len(grid[incr])):
             if grid[incr - 1][j] == 1 and j in a:
+                print("hi")
                 sm = sm - 2
     return(sm)
