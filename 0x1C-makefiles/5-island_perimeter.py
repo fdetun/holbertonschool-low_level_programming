@@ -31,6 +31,5 @@ def island_perimeter(grid):
         a = fdefunc(incr, grid)
         for j in range(len(grid[incr])):
             if grid[incr - 1][j] == 1 and j in a:
-                print("hi")
                 sm = sm - 2
     return(sm)
