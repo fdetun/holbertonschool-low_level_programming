@@ -1,4 +1,3 @@
- 
 #ifndef Search_algorithm
 #define Search_algorithm
 #include <stdio.h>
