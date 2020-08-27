@@ -16,7 +16,7 @@ if (l == r)
 printf("%u\n", array[l]);
 }
 else
-printf("%u,", array[l]);
+printf("%u, ", array[l]);
 l++;
 }
 }
