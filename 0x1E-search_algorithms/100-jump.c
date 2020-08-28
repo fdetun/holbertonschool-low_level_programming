@@ -35,7 +35,6 @@ if (array[k] == value)
 return (k);
 k++;
 }
-return (-1);
 }
 else
 {
