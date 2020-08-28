@@ -14,6 +14,10 @@ int prints(int *array, size_t l, size_t r, size_t size,  int value)
 {
 size_t k = 0;
 
+if (r > size)
+{
+r = size;
+}
 printf("Value found between indexes [%lu] and [%lu]\n", l, r);
 k = l;
 while (k <= r)
