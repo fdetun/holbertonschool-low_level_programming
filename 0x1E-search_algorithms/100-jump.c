@@ -16,7 +16,7 @@ size_t k = 0;
 
 if (r > size)
 {
-r = size;
+r = l + sqrt(size) ;
 }
 printf("Value found between indexes [%lu] and [%lu]\n", l, r);
 k = l;
