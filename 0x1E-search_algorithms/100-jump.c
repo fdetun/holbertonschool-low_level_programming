@@ -16,7 +16,7 @@ size_t k = 0;
 
 if (r > size)
 {
-r = l + sqrt(size) ;
+r = l + sqrt(size);
 }
 printf("Value found between indexes [%lu] and [%lu]\n", l, r);
 k = l;
@@ -26,7 +26,7 @@ printf("Value checked array[%ld] = [%u]\n", k, array[k]);
 if (array[k] == value)
 return (k);
 if (k == size - 1)
-break;
+return (-1);
 k++;
 }
 return (0);
